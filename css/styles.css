@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "CentraleSansLight";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Centrale_Sans_Light-webfont.eot?") format("eot"), url("../fonts/Centrale_Sans_Light-webfont.woff") format("woff"), url("../fonts/Centrale_Sans_Light-webfont.ttf") format("truetype"), url('../fonts/Centrale_Sans_Light-webfont.svg#CentraleSansLight') format("svg")
+}
+
+@font-face {
+    font-family: "CentraleSansMedium";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Centrale_Sans_Medium-webfont.eot?") format("eot"), url("../fonts/Centrale_Sans_Medium-webfont.woff") format("woff"), url("../fonts/Centrale_Sans_Medium-webfont.ttf") format("truetype"), url('../fonts/Centrale_Sans_Medium-webfont.svg#sCentraleSansMedium"') format("svg")
+}
+
+@font-face {
+    font-family: "CentraleSansBold";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/Centrale_Sans_Bold-webfont.eot?") format("eot"), url("../fonts/Centrale_Sans_Bold-webfont.woff") format("woff"), url("../fonts/Centrale_Sans_Bold-webfont.ttf") format("truetype"), url('../fonts/Centrale_Sans_Bold-webfont.svg#sCentraleSansBold') format("svg")
+}
+
+
+
+/* ----------------------------------------------------------------
+	Typography
+-----------------------------------------------------------------*/
+
+
+body {
+	line-height: 1.5;
+	color: #53565A;
+	font-family: 'CentraleSansMedium', sans-serif;
+}
+
+a {
+	text-decoration: none !important;
+    color: #00afdb;
+    transition: 0.3s all ease-in-out
+}
+
+a:hover { color: #222; }
+
+a img { border: none; }
+
+img { max-width: 100%; }
+
+iframe { border: none !important; }
+
+
+/* ----------------------------------------------------------------
+	Basic Layout Styles
+-----------------------------------------------------------------*/
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #333F48;
+	font-weight: 600;
+	line-height: 1.5;
+	margin: 0 0 30px 0;
+	font-family: 'CentraleSansBold', sans-serif;
+}
+
+h5,
+h6 { margin-bottom: 20px; }
+
+h1 { font-size: 36px; }
+
+h2 { font-size: 30px; }
+
+h3 { font-size: 24px; }
+
+h4 { font-size: 18px; }
+
+h5 { font-size: 14px; }
+
+h6 { font-size: 12px; }
+
+h4 { font-weight: 600; }
+
+h5,
+h6 { font-weight: bold; }
+
+p,
+pre,
+ul,
+ol,
+dl,
+dd,
+blockquote,
+address,
+table,
+fieldset,
+form { margin-bottom: 30px; }
+
+small { font-family: 'CentraleSansLight', sans-serif; }
+
+
+
+
+/* ----------------------------------------------------------------
+	Main Styles
+-----------------------------------------------------------------*/
+/*helper*/
+.text-left{text-align: left}
+.text-center{text-align: center}
+
+.main__content{
+    height: 100%;
+    display: table;
+}
+.wrapper{
+    padding: 0rem 2rem;
+    vertical-align: middle;
+    display: table-cell
+}
+
+@media(min-width:768px){
+    .main__content{
+        display: block;
+    }
+    .wrapper{
+        padding: 8rem 4rem;
+        display: block
+
+    }
+}
+
+.inner__content{
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.inner__content-text{
+    font-family: "CentraleSansLight";
+    line-height: 2.5rem;
+    color: #96989a
+}
+
+@media(min-width:768px){
+    .small__box{
+        width: 650px;
+        margin: 0
+    }
+    .inner__content-title{
+        font-size: 5rem;
+    }
+
+    .inner__content-text{
+        font-size: 1.5rem
+    }
+}
+
+
+
+/**fotter**/
+.footer__inner{
+    padding: 15px 0
+}
+
+.footer__inner-text{
+    margin: 0 auto
+}
+
+    .footer__content{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
